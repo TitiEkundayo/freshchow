@@ -1,0 +1,32 @@
+@use "../generalStyles/colors" as *;
+@use "../generalStyles/fonts" as *;
+
+.GreenBgPurchaseChoiceBtn {
+	background-color: $secColor;
+	border: 0;
+	border-radius: 0.3375rem;
+	padding: 0.5rem 0.8rem;
+	color: $whiteColor;
+	@include btnText;
+}
+
+.GreenBgPurchaseChoiceBtn:hover {
+	background-color: $whiteColor;
+	color: $secColor;
+	border: 1px solid;
+}
+
+.WhiteBgPurchaseChoiceBtn {
+	background-color: $whiteColor;
+	border: 1px solid $pryColor;
+	border-radius: 0.3375rem;
+	// padding: 0.5rem 0.75rem;
+	color: $pryColor;
+	@include btnText;
+}
+
+.WhiteBgPurchaseChoiceBtn:hover {
+	background-color: $pryColor;
+	color: $whiteColor;
+	border: 1px solid;
+}

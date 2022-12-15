@@ -1,0 +1,53 @@
+@use "./generalStyles/reset";
+@use "./generalStyles/mediaqueries" as *;
+
+// components
+@use "./componentStyles/navbarStyles";
+@use "./componentStyles/buttonStyles";
+@use "./componentStyles/cardStyles";
+@use "./componentStyles/formStyles";
+@use "./componentStyles/footerStyles";
+
+// pages
+// @use "./pageStyles/homepageStyles";
+
+.HomeBg {
+	// background-image: url("../images/heroImages/homepage_hero_bg.png");
+	// background-repeat: no-repeat;
+	// background-position: center;
+	// min-height: 100vh;
+
+	background-image: url("../images/heroImages/homepage_hero_bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	// background-position: center;
+	background-position-x: center;
+	// background-size: contain;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+// 375, 414, 390, 393, 360, 412, 280, 412: 280 - 390, 412 - 414
+// 820, 768, 912, 540: 760 - 920
+// 1024, 1280: 1000 - upwards
+
+@media (max-width: 414) and (min-width: 280) {
+	.HomeBg {
+		// background-image: url("../images/heroImages/homepage_hero_bg.png");
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		background-position: center;
+		background-size: contain;
+		min-height: 100vh;
+		// min-width: 100vw;
+	}
+}
+
+@media (max-width: 414) and (min-width: 412) {
+}
+
+@media (max-width: 760) and (min-width: 920) {
+}
+
+@media (min-width: 1200px) {
+}

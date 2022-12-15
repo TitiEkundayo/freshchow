@@ -1,0 +1,9 @@
+@use "../generalStyles/colors" as *;
+
+.HomeBg {
+	background-image: url("../../images/heroImages/homepage_hero_bg.png");
+}
+
+.greenTxt {
+	color: $secColor;
+}
