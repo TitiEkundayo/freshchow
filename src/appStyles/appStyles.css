@@ -117,6 +117,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  background-position: center -2rem;
   min-height: 100vh;
   min-width: 100vw;
 }
