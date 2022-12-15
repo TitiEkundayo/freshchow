@@ -22,7 +22,7 @@ const Hero = () => {
 		<div className="ms-4 my-5 py-5">
 			{/* <div className="row"> */}
 			<div className="col-md-6 col-sm-12">
-				<div className="">
+				<div className="w-75">
 					<p className="text-black mb-0">LOREM IPSUM</p>
 
 					<h1 className="">

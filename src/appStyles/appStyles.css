@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,40 +18,29 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: poppins;
-  font-size: 3.052rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2%;
 }
 
 h2 {
-  font-family: poppins;
-  font-size: 2.441rem !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem !important;
+  font-weight: bold;
+  letter-spacing: 2%;
 }
 
 h3 {
-  font-family: poppins;
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-family: poppins;
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-family: poppins;
-  font-size: 1.25em;
-  line-height: 1.75rem;
-}
-
-h6 {
-  font-family: poppins;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 2%;
 }
 
 p {
-  font-family: "Open Sans";
-  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   line-height: 1.75rem;
   letter-spacing: 0.02rem;
 }
@@ -116,8 +107,7 @@ p {
   background-image: url("../images/heroImages/homepage_hero_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center;
-  background-position: center -2rem;
+  background-position: center -5rem;
   min-height: 100vh;
   min-width: 100vw;
 }
