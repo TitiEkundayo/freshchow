@@ -133,7 +133,6 @@ p {
 }
 
 .HomeBg {
-  background-image: url("../images/heroImages/homepage_hero_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -141,12 +140,14 @@ p {
 
 @media (max-width: 480px) {
   .HomeBg {
+    background-image: url("../images/heroImages/homepage_mobile_hero.png");
     opacity: rgb(255, 255, 255);
     background-position: center;
   }
 }
 @media (min-width: 768px) {
   .HomeBg {
+    background-image: url("../images/heroImages/homepage_hero_bg.png");
     background-position: center;
     background-position: center -5rem;
     min-width: 100vw;
