@@ -18,7 +18,7 @@
 	// background-position: center;
 	// min-height: 100vh;
 
-	// background-image: url("../images/heroImages/homepage_hero_bg.png");
+	background-image: url("../images/heroImages/homepage_hero_bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	// background-position: center;
@@ -35,7 +35,7 @@
 
 @media (max-width: $phone) {
 	.HomeBg {
-		background-image: url("../images/heroImages/homepage_mobile_hero.png");
+		// background-image: url("../images/heroImages/homepage_mobile_hero.png");
 		opacity: rgb(255, 255, 255);
 		// background-repeat: no-repeat;
 		// background-size: cover;
@@ -55,7 +55,7 @@
 
 @media (min-width: $tablet) {
 	.HomeBg {
-		background-image: url("../images/heroImages/homepage_hero_bg.png");
+		// background-image: url("../images/heroImages/homepage_hero_bg.png");
 		background-position: center;
 		background-position: center -5rem;
 		min-width: 100vw;
