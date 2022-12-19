@@ -1,4 +1,5 @@
 @use "../generalStyles/colors" as *;
+@use "../generalStyles/mediaqueries" as *;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
@@ -59,8 +60,15 @@
 @mixin btnText {
 	font: {
 		family: poppins;
-		weight: 700;
+		weight: bold;
 		size: 1.2rem;
+	}
+
+	@media (max-width: $phone) {
+		font: {
+			weight: bold;
+			size: 1rem;
+		}
 	}
 }
 
@@ -113,4 +121,18 @@ p {
 
 .removeLineHeight {
 	line-height: 0;
+}
+
+@media (max-width: $phone) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
 }
