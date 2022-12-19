@@ -41,14 +41,14 @@ const Hero = () => {
 			{/* <div className="row"> */}
 			<div className="col-md-8 ">
 				<div className="w-75">
-					<p className="text-black mb-0">LOREM IPSUM</p>
+					<p className="text-black mb-0 text-opacity-100">LOREM IPSUM</p>
 
-					<h1 className="">
+					<h1 className="text-opacity-100">
 						Fastest <span className="greenText">Delivery</span> and{" "}
 						<span className="greenText">Easy Pickup</span>
 					</h1>
 
-					<p className="text-black">
+					<p className="text-black text-opacity-100">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolore
 						possimus sequi assumenda nemo? Illo consequuntur aliquam illum vitae
 						porro?
