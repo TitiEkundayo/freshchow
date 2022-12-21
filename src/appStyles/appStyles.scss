@@ -13,51 +13,24 @@
 // @use "./pageStyles/homepageStyles";
 
 .HomeBg {
-	// background-image: url("../images/heroImages/homepage_hero_bg.png");
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// min-height: 100vh;
-
 	background-image: url("../images/heroImages/homepage_hero_bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	// background-position: center;
-	// background-position-x: center;
-	// background-position: center -5rem;
-	// background-size: contain;
+	background-attachment: scroll;
 	min-height: 100vh;
-	// min-width: 100vw;
+	min-width: 100vw;
 }
-
-// 375, 414, 390, 393, 360, 412, 280, 412: 280 - 390, 412 - 414
-// 820, 768, 912, 540: 760 - 920
-// 1024, 1280: 1000 - upwards
 
 @media (max-width: $phone) {
 	.HomeBg {
-		// background-image: url("../images/heroImages/homepage_mobile_hero.png");
-		background-color: rgb(255, 255, 255);
-		// background-repeat: no-repeat;
-		// background-size: cover;
+		// background-color: rgba(8, 8, 8, 0.5);
 		background-position: center;
-		// opacity: 0.7;
-		// background-color: rgba(255, 255, 255, 0.25);
-		// background-size: cover;
-		// min-height: 100vh;
-		// min-width: 100vw;
 	}
-
-	// .HomeBg::before {
-	// 	// content: "";
-	// 	// background-color: rgba(250, 250, 250, 0.775);
-	// }
 }
 
 @media (min-width: $tablet) {
 	.HomeBg {
-		// background-image: url("../images/heroImages/homepage_hero_bg.png");
 		background-position: center;
 		background-position: center -5rem;
-		min-width: 100vw;
 	}
 }

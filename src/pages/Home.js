@@ -3,12 +3,7 @@ import {
 	WhiteBgPurchaseChoiceBtn,
 } from "../components/Buttons";
 import Navbar from "../components/Navbar";
-import whatsapp from "../images/social_media_icon/whatsapp.svg";
-import instagram from "../images/social_media_icon/instagram.svg";
-import facebook from "../images/social_media_icon/facebook.svg";
-import linkedin from "../images/social_media_icon/linkedin.svg";
-import email from "../images/social_media_icon/mail.svg";
-import { SocialMediaIcon } from "../components/Icons";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 import homepage from "../images/heroImages/homepage_hero_bg.png";
 
@@ -17,29 +12,18 @@ const Home = () => {
 	// mobile view
 	return (
 		<div className="HomeBg container">
-			<div className="row">
-				<div className="">
-					<SocialMediaLinks />
-				</div>
-				<div className="">
-					<Navbar />
-					<Hero />
-				</div>
-			</div>
-			{/* <div className="">
-				<Navbar />
-				<Hero />
-			</div>
-			<SocialMediaLinks /> */}
+			<SocialMediaLinks />
+			<Navbar />
+			<Hero />
 		</div>
 	);
 };
 
 const Hero = () => {
 	return (
-		<div className="ms-4 my-5 py-5 ps-3">
+		<div className="ms-4 my-5 py-5">
 			{/* <div className="row"> */}
-			<div className="col-md-8 ">
+			<div className="col-md-7">
 				<div className="w-75">
 					<p className="text-black mb-0 text-opacity-100">LOREM IPSUM</p>
 
@@ -48,7 +32,7 @@ const Hero = () => {
 						<span className="greenText">Easy Pickup</span>
 					</h1>
 
-					<p className="text-black text-opacity-100">
+					<p className="text-black text-opacity-100 w-75">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolore
 						possimus sequi assumenda nemo? Illo consequuntur aliquam illum vitae
 						porro?
@@ -77,14 +61,14 @@ const Hero = () => {
 
 const SocialMediaLinks = () => {
 	return (
-		<div className="d-flex flex-column position-fixed top-50 start-0">
-			{/* <div className="d-flex flex-column social_links"> */}
-			<SocialMediaIcon icon={whatsapp} altText="whatsapp icon" />
-			<SocialMediaIcon icon={instagram} altText="instagram icon" />
-			<SocialMediaIcon icon={facebook} altText="facebook icon" />
-			<SocialMediaIcon icon={linkedin} altText="linkedin icon" />
-			<SocialMediaIcon icon={email} altText="email icon" />
-		</div>
+		<>
+			<div className="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 d-md-block d-none d-sm-none">
+				<SocialMediaIcons />
+			</div>
+			<div className="d-flex flex-column position-fixed top-50 start-0 ms-2 translate-middle-y d-md-none d-sm-block">
+				<SocialMediaIcons />
+			</div>
+		</>
 	);
 };
 

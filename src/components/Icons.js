@@ -1,15 +1,3 @@
-// social media component
-
-export const SocialMediaIcon = ({ icon, altText, link }) => {
-	return (
-		<div className="text-center">
-			<a href={link}>
-				<img src={icon} alt={altText} width="53px" />
-			</a>
-		</div>
-	);
-};
-
 export const ForwardArrowIcon = () => {
 	return (
 		<svg

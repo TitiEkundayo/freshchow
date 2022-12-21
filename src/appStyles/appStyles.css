@@ -70,7 +70,7 @@ p {
   line-height: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   h1 {
     font-size: 3rem;
   }
@@ -91,7 +91,7 @@ p {
   font-weight: bold;
   font-size: 1.2rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .GreenBgPurchaseChoiceBtn {
     font-weight: bold;
     font-size: 1rem;
@@ -113,7 +113,7 @@ p {
   font-weight: bold;
   font-size: 1.2rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .WhiteBgPurchaseChoiceBtn {
     font-weight: bold;
     font-size: 1rem;
@@ -136,12 +136,13 @@ p {
   background-image: url("../images/heroImages/homepage_hero_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .HomeBg {
-    background-color: rgb(255, 255, 255);
     background-position: center;
   }
 }
@@ -149,6 +150,5 @@ p {
   .HomeBg {
     background-position: center;
     background-position: center -5rem;
-    min-width: 100vw;
   }
 }/*# sourceMappingURL=appStyles.css.map */
