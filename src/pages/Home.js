@@ -94,11 +94,27 @@ const SocialMediaLinks = () => {
 	return (
 		<div className="d-flex flex-column">
 			{/* <div className="d-flex flex-column social_links"> */}
-			<SocialMediaIcon icon={whatsapp} altText="whatsapp icon" />
-			<SocialMediaIcon icon={instagram} altText="instagram icon" />
-			<SocialMediaIcon icon={facebook} altText="facebook icon" />
-			<SocialMediaIcon icon={linkedin} altText="linkedin icon" />
-			<SocialMediaIcon icon={email} altText="email icon" />
+			<SocialMediaIcon
+				icon={whatsapp}
+				altText="whatsapp icon"
+				link=" https://wa.me/message/SXNSKX2I7XWFI1"
+			/>
+			<SocialMediaIcon
+				icon={instagram}
+				altText="instagram icon"
+				link="https://www.instagram.com/freshchow/"
+			/>
+			<SocialMediaIcon
+				icon={facebook}
+				altText="facebook icon"
+				link="https://www.facebook.com/freshchowng/"
+			/>
+			<SocialMediaIcon
+				icon={linkedin}
+				altText="linkedin icon"
+				link="https://www.linkedin.com/company/fresh-chow/"
+			/>
+			{/* <SocialMediaIcon icon={email} altText="email icon" /> */}
 		</div>
 	);
 };
