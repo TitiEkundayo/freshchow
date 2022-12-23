@@ -13,7 +13,7 @@ export const SocialMediaIcon = ({ icon, altText, link }) => {
 				<img
 					src={icon}
 					alt={altText}
-					width="30px"
+					width="40px"
 					className="d-md-none d-sm-block"
 				/>
 			</a>

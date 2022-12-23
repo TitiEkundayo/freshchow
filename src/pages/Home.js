@@ -40,7 +40,7 @@ const Hero = () => {
 		<div className="ms-4 my-5 py-5">
 			{/* <div className="row"> */}
 			<div className="col-md-7">
-				<div className="w-75 ms-2">
+				<div className="w-75 ms-3">
 					<p className="text-black mb-0 text-opacity-100">LOREM IPSUM</p>
 
 					<h1 className="text-opacity-100">
