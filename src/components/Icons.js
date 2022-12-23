@@ -1,3 +1,26 @@
+// social media component
+
+export const SocialMediaIcon = ({ icon, altText, link }) => {
+	return (
+		<div className="text-center">
+			<a href={link}>
+				<img
+					src={icon}
+					alt={altText}
+					width="53px"
+					className="d-md-block d-none d-sm-none"
+				/>
+				<img
+					src={icon}
+					alt={altText}
+					width="30px"
+					className="d-md-none d-sm-block"
+				/>
+			</a>
+		</div>
+	);
+};
+
 export const ForwardArrowIcon = () => {
 	return (
 		<svg

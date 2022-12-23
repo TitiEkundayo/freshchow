@@ -3,7 +3,13 @@ import {
 	WhiteBgPurchaseChoiceBtn,
 } from "../components/Buttons";
 import Navbar from "../components/Navbar";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import whatsapp from "../images/SocialMediaIcons/whatsapp.svg";
+import instagram from "../images/SocialMediaIcons/instagram.svg";
+import facebook from "../images/SocialMediaIcons/facebook.svg";
+import linkedin from "../images/SocialMediaIcons/linkedin.svg";
+import email from "../images/SocialMediaIcons/email.svg";
+import { SocialMediaIcon } from "../components/Icons";
+// import SocialMediaIcons from "../components/SocialMediaIcons";
 
 import homepage from "../images/heroImages/homepage_hero_bg.png";
 
@@ -12,9 +18,19 @@ const Home = () => {
 	// mobile view
 	return (
 		<div className="HomeBg container">
-			<SocialMediaLinks />
+			{/* <SocialMediaShowHide />
 			<Navbar />
-			<Hero />
+			<Hero /> */}
+
+			<div className="row">
+				<div className="">
+					<SocialMediaShowHide />
+				</div>
+				<div className="">
+					<Navbar />
+					<Hero />
+				</div>
+			</div>
 		</div>
 	);
 };
@@ -24,7 +40,7 @@ const Hero = () => {
 		<div className="ms-4 my-5 py-5">
 			{/* <div className="row"> */}
 			<div className="col-md-7">
-				<div className="w-75">
+				<div className="w-75 ms-2">
 					<p className="text-black mb-0 text-opacity-100">LOREM IPSUM</p>
 
 					<h1 className="text-opacity-100">
@@ -59,17 +75,44 @@ const Hero = () => {
 	);
 };
 
-const SocialMediaLinks = () => {
+const SocialMediaShowHide = () => {
 	return (
 		<>
-			<div className="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 d-md-block d-none d-sm-none">
-				<SocialMediaIcons />
-			</div>
-			<div className="d-flex flex-column position-fixed top-50 start-0 ms-2 translate-middle-y d-md-none d-sm-block">
-				<SocialMediaIcons />
+			<div>
+				<div className="d-md-block d-none d-sm-none position-fixed top-50 end-0">
+					<SocialMediaLinks />
+				</div>
+				<div className="d-md-none d-sm-block position-fixed top-50 start-1">
+					<SocialMediaLinks />
+				</div>
 			</div>
 		</>
 	);
 };
+const SocialMediaLinks = () => {
+	return (
+		<div className="d-flex flex-column">
+			{/* <div className="d-flex flex-column social_links"> */}
+			<SocialMediaIcon icon={whatsapp} altText="whatsapp icon" />
+			<SocialMediaIcon icon={instagram} altText="instagram icon" />
+			<SocialMediaIcon icon={facebook} altText="facebook icon" />
+			<SocialMediaIcon icon={linkedin} altText="linkedin icon" />
+			<SocialMediaIcon icon={email} altText="email icon" />
+		</div>
+	);
+};
+
+// const SocialMediaLinks = () => {
+// 	return (
+// 		<>
+// 			<div className="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 d-md-block d-none d-sm-none">
+// 				<SocialMediaIcons />
+// 			</div>
+// 			<div className="d-flex flex-column position-fixed top-50 start-0 ms-2 translate-middle-y d-md-none d-sm-block">
+// 				<SocialMediaIcons />
+// 			</div>
+// 		</>
+// 	);
+// };
 
 export default Home;
