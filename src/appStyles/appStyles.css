@@ -143,6 +143,7 @@ p {
 
 @media (max-width: 540px) {
   .HomeBg {
+    background-color: rgba(150, 148, 148, 0.5);
     background-position: center;
   }
 }

@@ -39,19 +39,20 @@ const Hero = () => {
 	return (
 		<div className="ms-4 my-5 py-5">
 			{/* <div className="row"> */}
-			<div className="col-md-7">
-				<div className="w-75 ms-3">
-					<p className="text-black mb-0 text-opacity-100">LOREM IPSUM</p>
+			<div className="col-md-7 ms-3">
+				<div className="w-75">
+					{/* <p className="text-black mb-0 text-opacity-100">LOREM IPSUM</p> */}
 
-					<h1 className="text-opacity-100">
-						Fastest <span className="greenText">Delivery</span> and{" "}
+					<h1 className="">
+						<span className="text-dark">Fastest </span>
+						<span className="greenText">Delivery </span>
+						<span className="text-dark">and </span>
 						<span className="greenText">Easy Pickup</span>
 					</h1>
 
-					<p className="text-black text-opacity-100 w-75">
+					<p className="text-black text-opacity-100">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolore
-						possimus sequi assumenda nemo? Illo consequuntur aliquam illum vitae
-						porro?
+						possimus sequi?
 					</p>
 				</div>
 
